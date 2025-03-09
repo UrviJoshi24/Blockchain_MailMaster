@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web3 Login</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.2.1/web3.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Decentralized Login</h2>
+        <button id="connectWallet">Connect MetaMask</button>
+        <button id="register">Register</button>
+        <button id="login">Login</button>
+        <button id="logout">Logout</button>
+
+        <p id="walletAddress"></p>
+        <p id="nonce"></p>
+        <p id="message"></p>
+    </div>
+
+    <script src="{% static 'js/script.js' %}"></script>
+</body>
+</html>
